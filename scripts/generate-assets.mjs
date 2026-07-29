@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url'
 const projectRoot = dirname(dirname(fileURLToPath(import.meta.url)))
 const sourceDir = join(projectRoot, 'assets', 'source-icons')
 const buttonsDir = join(projectRoot, 'assets', 'buttons')
+const skillsDir = join(projectRoot, 'assets', 'skills')
 
 const escapeXml = (value) =>
   value.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;')
@@ -39,14 +40,27 @@ async function svgIcon(file, color, mode = 'fill', placement = {}) {
 }
 
 async function renderButton(button) {
-  const width = Math.max(82, Math.ceil(button.label.length * 7.1 + 48))
-  const icon = await svgIcon(button.file, '#ffffff', button.mode, { x: 8, y: 7, size: 18 })
+  const width = Math.max(70, Math.ceil(button.label.length * 6.4 + 40))
+  const icon = await svgIcon(button.file, '#ffffff', button.mode, { x: 7, y: 6, size: 16 })
 
   return [
-    `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="32" viewBox="0 0 ${width} 32" role="img" aria-label="${escapeXml(button.label)}">`,
-    `<rect x=".5" y=".5" width="${width - 1}" height="31" rx="8" fill="${button.background}" stroke="${button.border ?? button.background}"/>`,
+    `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="28" viewBox="0 0 ${width} 28" role="img" aria-label="${escapeXml(button.label)}">`,
+    `<rect x=".5" y=".5" width="${width - 1}" height="27" rx="7" fill="${button.background}" stroke="${button.border ?? button.background}"/>`,
     icon,
-    `<text x="32" y="20.7" fill="#ffffff" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12.5" font-weight="700">${escapeXml(button.label)}</text>`,
+    `<text x="29" y="18.2" fill="#ffffff" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" font-weight="700">${escapeXml(button.label)}</text>`,
+    '</svg>',
+  ].join('')
+}
+
+async function renderSkill(skill) {
+  const width = Math.max(82, Math.ceil(skill.label.length * 6.8 + 43))
+  const icon = await svgIcon(skill.file, skill.color, 'stroke', { x: 7, y: 6, size: 17 })
+
+  return [
+    `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="30" viewBox="0 0 ${width} 30" role="img" aria-label="${escapeXml(skill.label)}">`,
+    `<rect x=".5" y=".5" width="${width - 1}" height="29" rx="7.5" fill="#161b22" stroke="#30363d"/>`,
+    icon,
+    `<text x="31" y="19.2" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" font-weight="650">${escapeXml(skill.label)}</text>`,
     '</svg>',
   ].join('')
 }
@@ -58,10 +72,20 @@ const buttons = [
   { output: 'website.svg', label: 'Website', file: 'icon-globe.svg', background: '#7c3aed', mode: 'stroke' },
 ]
 
+const skills = [
+  { output: 'agentation.svg', label: 'Agentation', file: 'lucide-mouse-pointer-click.svg', color: '#f472b6' },
+  { output: 'graphify.svg', label: 'Graphify', file: 'lucide-network.svg', color: '#a78bfa' },
+]
+
 await mkdir(buttonsDir, { recursive: true })
+await mkdir(skillsDir, { recursive: true })
 
 for (const button of buttons) {
   await writeFile(join(buttonsDir, button.output), await renderButton(button))
 }
 
-console.log(`Generated ${buttons.length} resource buttons.`)
+for (const skill of skills) {
+  await writeFile(join(skillsDir, skill.output), await renderSkill(skill))
+}
+
+console.log(`Generated ${buttons.length} resource buttons and ${skills.length} skill cards.`)

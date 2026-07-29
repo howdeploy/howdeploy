@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="98" height="32" viewBox="0 0 98 32" role="img" aria-label="Website"><rect x=".5" y=".5" width="97" height="31" rx="8" fill="#7c3aed" stroke="#7c3aed"/><g transform="translate(8 7) scale(0.75) translate(0 0)" fill="none" stroke="#ffffff" color="#ffffff">
+<svg xmlns="http://www.w3.org/2000/svg" width="85" height="28" viewBox="0 0 85 28" role="img" aria-label="Website"><rect x=".5" y=".5" width="84" height="27" rx="7" fill="#7c3aed" stroke="#7c3aed"/><g transform="translate(7 6) scale(0.6666666666666666) translate(0 0)" fill="none" stroke="#ffffff" color="#ffffff">
   <circle cx="12" cy="12" r="10" />
   <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
   <path d="M2 12h20" />
-</g><text x="32" y="20.7" fill="#ffffff" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12.5" font-weight="700">Website</text></svg>
+</g><text x="29" y="18.2" fill="#ffffff" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" font-weight="700">Website</text></svg>
