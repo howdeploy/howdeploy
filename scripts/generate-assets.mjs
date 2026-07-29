@@ -75,6 +75,9 @@ const buttons = [
 const skills = [
   { output: 'agentation.svg', label: 'Agentation', file: 'lucide-mouse-pointer-click.svg', color: '#f472b6' },
   { output: 'graphify.svg', label: 'Graphify', file: 'lucide-network.svg', color: '#a78bfa' },
+  { output: 'llm-wiki.svg', label: 'LLM Wiki', file: 'lucide-book-open.svg', color: '#2dd4bf' },
+  { output: 'gsd-core.svg', label: 'GSD Core', file: 'lucide-list-checks.svg', color: '#f59e0b' },
+  { output: 'gstack.svg', label: 'gstack', file: 'lucide-layers-3.svg', color: '#60a5fa' },
 ]
 
 await mkdir(buttonsDir, { recursive: true })

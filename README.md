@@ -13,19 +13,19 @@ I build agent tools, creative workflows, and strange little systems<br>where AI 
 ⌨️ Codex • Kimi CLI • custom skills
 🎨 GPT Image 2 • Anima • Krea 2
 🐧 Linux • Flipper Zero • moddable gadgets
+🧰 Tools I've worked with: Claude Code • Claude Design • opencode
+   Hermes • OpenClaw • NotebookLM • Obsidian • n8n
 </pre>
 
-🧰 **Tools I've worked with:** Claude Code · Claude Design · opencode · Hermes · OpenClaw · NotebookLM · Obsidian · n8n
-
 <p>
-  <strong>Skills I use — click to explore:</strong>&nbsp;
   <a href="https://www.agentation.com/"><img src="./assets/skills/agentation.svg" height="30" alt="Agentation"></a>
   <a href="https://github.com/Graphify-Labs/graphify"><img src="./assets/skills/graphify.svg" height="30" alt="Graphify"></a>
+  <a href="https://github.com/howdeploy/ObsidianDataWeave#llm-wiki"><img src="./assets/skills/llm-wiki.svg" height="30" alt="LLM Wiki"></a>
+  <a href="https://github.com/open-gsd/gsd-core"><img src="./assets/skills/gsd-core.svg" height="30" alt="GSD Core"></a>
+  <a href="https://github.com/garrytan/gstack"><img src="./assets/skills/gstack.svg" height="30" alt="gstack"></a>
 </p>
 
 <br clear="right">
-
-Linux every day; moddable devices whenever possible.
 
 ### 🌤️ Outside the terminal
 
