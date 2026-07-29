@@ -77,3 +77,5 @@ I'm into gameplay-first single-player and indie games, moddable gadgets,<br>mech
   <a href="https://x.com/copenzafan"><img src="./assets/buttons/x.svg" height="32" alt="X"></a>
   <a href="https://deploychan.webcam/"><img src="./assets/buttons/website.svg" height="32" alt="Website"></a>
 </div>
+
+<!-- This repository powers the public @howdeploy profile. -->
