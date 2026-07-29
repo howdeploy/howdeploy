@@ -17,9 +17,8 @@ I build agent tools, creative workflows, and strange little systems<br>where AI 
 
 🧰 **Tools I've worked with:** Claude Code · Claude Design · opencode · Hermes · OpenClaw · NotebookLM · Obsidian · n8n
 
-**Skills I use — click to explore:**
-
 <p>
+  <strong>Skills I use — click to explore:</strong>&nbsp;
   <a href="https://www.agentation.com/"><img src="./assets/skills/agentation.svg" height="30" alt="Agentation"></a>
   <a href="https://github.com/Graphify-Labs/graphify"><img src="./assets/skills/graphify.svg" height="30" alt="Graphify"></a>
 </p>
